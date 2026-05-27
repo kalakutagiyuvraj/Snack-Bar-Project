@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackHub : Menu</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .menu-category {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .category-btn {
+            background: var(--card-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: var(--primary-color);
+        }
+
+        .menu-page .food-card {
+            height: 100%;
+        }
+
+        #menu-image {
+            height: 550px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR START ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">SnackHub</a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <!-- Order Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="menu.html" class="btn custom-btn">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+    <!-- ================= MENU SECTION START ================= -->
+    <section class="menu-page section-padding" id="menu">
+        <div class="container">
+            <section class="menu-page section-padding" id="menu">
+                <div class="container">
+
+                    <!-- Section Title -->
+                    <div class="section-title text-center">
+                        <h2>We Serve</h2>
+                        <p>Explore all delicious food categories</p>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="menu-category text-center mb-5">
+                        <button class="category-btn active">All</button>
+                        <button class="category-btn">Burgers</button>
+                        <button class="category-btn">Pizza</button>
+                        <button class="category-btn">Fries</button>
+                        <button class="category-btn">Cold Drinks</button>
+                        <button class="category-btn">Momos</button>
+                    </div>
+
+                    <!-- Menu Items -->
+                    <div class="row g-4">
+
+
+                        <!-- ==============================
+                                    BURGERS 
+                        ============================== -->
+                        <!-- Cheese Burger -->
+                        <div class="col-md-6 col-lg-4 burger">
+                            <div class="food-card">
+                                <img src="images/cheese_burger.png" alt="Burger">
+
+                                <div class="food-content">
+                                    <h3>Cheese Burger</h3>
+                                    <p>Loaded burger with cheese and fresh veggies.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹99</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Double Patty Burger -->
+                        <div class="col-md-6 col-lg-4 burger">
+                            <div class="food-card">
+                                <img src="images/double_patty_burger.png" alt="Burger">
+
+                                <div class="food-content">
+                                    <h3>Double Patty Burger</h3>
+                                    <p>Juicy double patty burger with extra cheese.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹149</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chicken Burger -->
+                        <div class="col-md-6 col-lg-4 burger">
+                            <div class="food-card">
+                                <img src="images/chicken_burger.png" alt="Burger">
+
+                                <div class="food-content">
+                                    <h3>Chicken Burger</h3>
+                                    <p>Grilled chicken breast with fresh vegetables.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹129</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- ==============================
+                                    PIZZA 
+                        ============================== -->
+                        <!-- Margherita Pizza -->
+                        <div class="col-md-6 col-lg-4 pizza">
+                            <div class="food-card">
+                                <img src="images/margherita_pizza.png" alt="Pizza">
+
+                                <div class="food-content">
+                                    <h3>Margherita Pizza</h3>
+                                    <p>Classic cheesy pizza with fresh toppings.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹99</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Farmhouse Pizza -->
+                        <div class="col-md-6 col-lg-4 pizza">
+                            <div class="food-card">
+                                <img src="images/farmhouse_pizza.png" alt="Pizza">
+
+                                <div class="food-content">
+                                    <h3>Farmhouse Pizza</h3>
+                                    <p>Loaded with veggies and mozzarella cheese.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹149</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Large Pizza -->
+                        <div class="col-md-6 col-lg-4 pizza">
+                            <div class="food-card">
+                                <img src="images/large_pizza.png" alt="Pizza">
+
+                                <div class="food-content">
+                                    <h3>Large Pizza</h3>
+                                    <p>Perfect for sharing with your family and friends.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹199</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ==============================
+                                    FRIES 
+                        ============================== -->
+                        <!-- Salted French Fries -->
+                        <div class="col-md-6 col-lg-4 fries">
+                            <div class="food-card">
+                                <img src="images/frenchFries1.png" alt="Fries">
+
+                                <div class="food-content">
+                                    <h3>Salted French Fries</h3>
+                                    <p>Crispy golden fries served hot and fresh.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹59</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Peri Peri Fries -->
+                        <div class="col-md-6 col-lg-4 fries">
+                            <div class="food-card">
+                                <img src="images/peri_peri_fries.png" alt="Fries">
+
+                                <div class="food-content">
+                                    <h3>Peri Peri Fries</h3>
+                                    <p>Spicy and flavorful fries for those who like a kick.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹69</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ==============================
+                                    COLD DRINKS 
+                        ============================== -->
+                        <!-- Coco Cola -->
+                        <div class="col-md-6 col-lg-4 drink">
+                            <div class="food-card">
+                                <img src="images/coco_cola.png" alt="Drink">
+
+                                <div class="food-content">
+                                    <h3>Coca Cola</h3>
+                                    <p>Refreshing chilled cold drink for every meal.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹99</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sprite -->
+                        <div class="col-md-6 col-lg-4 drink">
+                            <div class="food-card">
+                                <img src="images/sprite.png" alt="Drink">
+
+                                <div class="food-content">
+                                    <h3>Sprite</h3>
+                                    <p>Refreshing lemon-lime flavored drink.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹99</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thums Up -->
+                        <div class="col-md-6 col-lg-4 drink">
+                            <div class="food-card">
+                                <img src="images/thumsup.png" alt="Drink">
+
+                                <div class="food-content">
+                                    <h3>Thums Up</h3>
+                                    <p>Bold and fizzy drink with a unique taste.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹99</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7 up  -->
+                        <div class="col-md-6 col-lg-4 drink">
+                            <div class="food-card">
+                                <img src="images/7up.png" alt="Drink">
+
+                                <div class="food-content">
+                                    <h3>7 Up</h3>
+                                    <p>Refreshing lemon-lime soda for every meal.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹99</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Normal Coldrinks -->
+                        <div class="col-md-6 col-lg-4 drink">
+                            <div class="food-card">
+                                <img src="images/cold_drink.png" alt="Drink">
+
+                                <div class="food-content">
+                                    <h3>Normal Coldrinks</h3>
+                                    <p>Refreshing chilled cold drink for every meal.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹20/pc</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ==============================
+                                    MOMOS 
+                         ============================== -->
+                        <!-- Veg Steamed Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/veg_steamed_momo.png" alt="Momos">
+
+                                <div class="food-content">
+                                    <h3>Veg Steamed Momos</h3>
+                                    <p>Spicy steamed momos with special chutney.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹79</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Veg Fried Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/veg_fried_momo.png" alt="Fried Momos">
+
+                                <div class="food-content">
+                                    <h3>Veg Fried Momos</h3>
+                                    <p>Crispy fried momos served with spicy sauce.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹89</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Veg Kurkure Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/veg_kurkure_momo.png" alt="Kurkure Momos">
+
+                                <div class="food-content">
+                                    <h3>Veg Kurkure Momos</h3>
+                                    <p>Spicy kurkure momos with special chutney.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹109</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Veg Tandoor Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/veg_tandoor_momo.png" alt="Tandoor Momos">
+
+                                <div class="food-content">
+                                    <h3>Veg Tandoor Momos</h3>
+                                    <p>Smoky tandoor momos with spicy sauce.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹119</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chicken Steamed Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/chicken_steamed_momo.png" alt="Steamed Momos">
+
+                                <div class="food-content">
+                                    <h3>Chicken Steamed Momos</h3>
+                                    <p>Flavorful steamed momos with tender chicken filling.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹129</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- chicken fried momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/chicken_fried_momo.png" alt="Fried Momos">
+
+                                <div class="food-content">
+                                    <h3>Chicken Fried Momos</h3>
+                                    <p>Crunchy fried momos with seasoned chicken filling.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹139</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chicken Kurkure Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/chicken_kurkure_momo.png" alt="Kurkure Momos">
+
+                                <div class="food-content">
+                                    <h3>Chicken Kurkure Momos</h3>
+                                    <p>Spicy kurkure momos with tender chicken filling.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹159</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chicken Tandoor Momos -->
+                        <div class="col-md-6 col-lg-4 momos">
+                            <div class="food-card">
+                                <img src="images/chicken_tandoor_momo.png" alt="Tandoor Momos">
+
+                                <div class="food-content">
+                                    <h3>Chicken Tandoor Momos</h3>
+                                    <p>Smoky tandoor momos with flavorful chicken filling.</p>
+
+                                    <div class="food-bottom">
+                                        <span>₹179</span>
+                                        <a href="#" class="btn small-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section Title -->
+                        <div class="section-title text-center mt-5">
+                            <h2>Money Saving Meal</h2>
+                            <p>Best deals for the whole family (your saving direct <span
+                                    class="text-warning fw-bold">60%</span> on thees meals).</p>
+                        </div>
+
+                        <!-- Combo -->
+                        <!-- Pack of 10 Burger-->
+                        <div class="cold-md-6 col-lg-4 d-flex justify-content-center w-100 flex-wrap gap-5">
+                            <div class="col-md-6 col-lg-4 burger">
+                                <div class="food-card">
+                                    <img src="images/JumboCombo.png" alt="Burger">
+
+                                    <div class="food-content">
+                                        <h3>Pack of 10</h3>
+                                        <p>10 delicious burgers for the whole family.</p>
+                                        <p>includes Classic Veg Burger, Aloo Tikki Burger, Cheese Burger, Double Patty
+                                            Burger, Spicy Paneer Burger, BBQ Veg Burger, Mexican Burger, Mushroom
+                                            Burger,
+                                            Chicken Burger, Zinger Burger, </p>
+
+                                        <div class="food-bottom">
+                                            <span>₹1199</span>
+                                            <a href="#" class="btn small-btn">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pack of 6 Pizza -->
+                            <div class="col-md-6 col-lg-4 pizza">
+                                <div class="food-card">
+                                    <img src="images/JumboComboPizza.png" alt="Pizza">
+
+                                    <div class="food-content">
+                                        <h3>Pack of 6</h3>
+                                        <p>6 delicious pizzas for the whole family.</p>
+                                        <p>includes Margherita Pizza, Farmhouse Pizza, Peppy Paneer Pizza, Cheese Burst
+                                            Pizza, Chicken Tikka Pizza, and Veggie Supreme Pizza..</p>
+
+                                        <div class="food-bottom">
+                                            <span>₹999</span>
+                                            <a href="#" class="btn small-btn">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- ================= MENU SECTION END ================= -->
+    <!-- ================= FOOTER START ================= -->
+    <footer class="footer-section section-padding" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Footer About -->
+                <div class="col-lg-4">
+                    <h3>SnackHub</h3>
+                    <p>
+                        Premium snack bar serving delicious fast food with quality
+                        and freshness.
+                    </p>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h3>Contact Info</h3>
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Pune, Maharashtra
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        +91 9876543210
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        info@snackhub.com
+                    </p>
+                </div>
+                <!-- Opening Hours -->
+                <div class="col-lg-4">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday : 10 AM - 11 PM</p>
+                    <p>Saturday - Sunday : 11 AM - 12 AM</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center ">
+                <p>
+                    © 2026 SnackHub. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+</body>
+
+</html>

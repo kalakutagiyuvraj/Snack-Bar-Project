@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackHub | Modern Snack Bar</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- ================= NAVBAR START ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">SnackHub</a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <!-- Order Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="menu.html" class="btn custom-btn">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+
+    <!-- ================= HERO SECTION START ================= -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Hero Text -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="hero-title">
+                        Fresh Snacks,
+                        <span>Fast Delivery</span>
+                    </h1>
+                    <p class="hero-text">
+                        Enjoy delicious burgers, pizza, fries, momos and refreshing drinks
+                        with premium quality and unbeatable taste.
+                    </p>
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="btn custom-btn me-3">
+                            Order Now
+                        </a>
+                        <a href="menu.html" class="btn outline-btn">
+                            View Menu
+                        </a>
+                    </div>
+                </div>
+                <!-- Hero Image -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="images/hero_image.png"
+                        class="img-fluid hero-image" alt="Burger">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= HERO SECTION END ================= -->
+
+    <!-- ================= FEATURED MENU START ================= -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="section-title text-center">
+                <h2>Featured Menu</h2>
+                <p>Explore our most loved snacks and fast food items</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Burger Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="images/burger.png" alt="Burger">
+                        <div class="food-content">
+                            <h3>Burgers</h3>
+                            <p>
+                                Crispy grilled burger loaded with cheese and fresh veggies.
+                            </p>
+                            <div class="food-bottom">
+                                <span>starting @ just ₹99</span>
+                                <a href="menu.html" class="btn small-btn">
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pizza Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="images/pizza.png" alt="Pizza">
+                        <div class="food-content">
+                            <h3>Pizza</h3>
+                            <p>
+                                Delicious cheesy pizza topped with fresh ingredients.
+                            </p>
+                            <div class="food-bottom">
+                                <span>starting @ just ₹119</span>
+                                <a href="#" class="btn small-btn">
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fries Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="images/french_fries.png" alt="Fries">
+                        <div class="food-content">
+                            <h3>French Fries</h3>
+                            <p>
+                                Crispy golden fries served with special sauces.
+                            </p>
+                            <div class="food-bottom">
+                                <span>starting @ just ₹59</span>
+                                <a href="#" class="btn small-btn">
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cold Drink Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="images/colddrink.png" alt="Cold Drink">
+                        <div class="food-content">
+                            <h3>Cold Drinks</h3>
+                            <p>
+                                Chilled beverages to refresh your mood instantly.
+                            </p>
+                            <div class="food-bottom">
+                                <span>starting @ just ₹20</span>
+                                <a href="#" class="btn small-btn">
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Momos Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="images/momo.png" alt="Momos">
+                        <div class="food-content">
+                            <h3>Momos</h3>
+                            <p>
+                                Hot and spicy momos served with signature chutney.
+                            </p>
+                            <div class="food-bottom">
+                                <span>starting @ just ₹79</span>
+                                <a href="#" class="btn small-btn">
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Combo Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="food-card">
+                        <img src="images/combo_bfc01.png"
+                            alt="Combo Meal">
+                        <div class="food-content">
+                            <h3>Snack Combo</h3>
+                            <p>
+                                Perfect combo meal with burger, fries and drink.
+                            </p>
+                            <div class="food-bottom">
+                                <span>starting @ just ₹149</span>
+                                <a href="#" class="btn small-btn">
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= FEATURED MENU END ================= -->
+
+    <!-- ================= ABOUT SECTION START ================= -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- About Image -->
+                <div class="col-lg-6">
+                    <img src="images/about1.png"
+                        class="img-fluid rounded-4" alt="About SnackHub">
+                </div>
+                <!-- About Content -->
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="section-title text-lg-start">
+                        <h2>About SnackHub</h2>
+                    </div>
+                    <p>
+                        SnackHub is a modern fast-food destination offering premium quality
+                        snacks with fresh ingredients and delicious taste.
+                    </p>
+                    <p>
+                        Customers love our quick delivery, hygienic cooking methods,
+                        flavorful recipes, and affordable prices.
+                    </p>
+                    <a href="#" class="btn custom-btn mt-3">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= ABOUT SECTION END ================= -->
+
+    <!-- ================= SERVICES SECTION START ================= -->
+    <section class="services-section section-padding" id="services">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Our Services</h2>
+                <p>Why customers choose us every day</p>
+            </div>
+            <div class="row g-4">
+                <!-- Service Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-truck"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>
+                            Quick and safe delivery right at your doorstep.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-basket"></i>
+                        <h3>Fresh Ingredients</h3>
+                        <p>
+                            Only premium quality ingredients are used.
+                        </p>
+                    </div>
+                </div>
+                <!-- Service Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>Hygienic Cooking</h3>
+                        <p>
+                            Prepared with complete hygiene and care.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-emoji-smile"></i>
+                        <h3>Best Taste</h3>
+                        <p>
+                            Mouth-watering flavors loved by everyone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= SERVICES SECTION END ================= -->
+    <!-- ================= SPECIAL OFFERS START ================= -->
+    <section class="offer-section section-padding">
+        <div class="container">
+            <div class="offer-banner text-center">
+                <h2>Special Combo Offer</h2>
+                <p>
+                    Get Burger + Pizza + Momos + Peri Peri Fries + Cold Drink Combo at just ₹399
+                </p>
+                <a href="#" class="btn custom-btn">
+                    Grab Offer
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ================= SPECIAL OFFERS END ================= -->
+
+    <!-- ================= TESTIMONIALS START ================= -->
+    <section class="testimonial-section section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Customer Reviews</h2>
+                <p>What our happy customers say</p>
+            </div>
+            <div class="row g-4">
+                <!-- Review Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <p>
+                            “Amazing taste and super fast delivery. Highly recommended!”
+                        </p>
+                        <h4>- Raj Rathi</h4>
+                    </div>
+                </div>
+                <!-- Review Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <p>
+                            “The burgers and momos are absolutely delicious.”
+                        </p>
+                        <h4>- Priyanka Jadhav</h4>
+                    </div>
+                </div>
+                <!-- Review Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <p>
+                            “Professional service with fresh and hygienic food.”
+                        </p>
+                        <h4>- Sarthak Joshi</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= TESTIMONIALS END ================= -->
+
+    <!-- ================= FOOTER START ================= -->
+    <footer class="footer-section section-padding" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Footer About -->
+                <div class="col-lg-4">
+                    <h3>SnackHub</h3>
+                    <p>
+                        Premium snack bar serving delicious fast food with quality
+                        and freshness.
+                    </p>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h3>Contact Info</h3>
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Pune, Maharashtra
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        +91 9876543210
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        info@snackhub.com
+                    </p>
+                </div>
+                <!-- Opening Hours -->
+                <div class="col-lg-4">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday : 10 AM - 11 PM</p>
+                    <p>Saturday - Sunday : 11 AM - 12 AM</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center h-25">
+                <p>
+                    © 2026 SnackHub. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+</body>
+</html>
